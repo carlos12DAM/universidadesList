@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name" translatable="false">actividadPMUL</string>
+    <string name = "nombre" translatable="false">Introduce tu nombre</string>
+    <string name="pulsacion" translatable="false">pulsa aqui</string>
+    <string name="RStxt">Ejemplo</string>
+    <string name="saludo">Aplicacion que saluda</string>
+</resources>
