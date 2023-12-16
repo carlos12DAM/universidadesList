@@ -1,0 +1,20 @@
+1. Crea una fichero de acceso aleatorio para guardar registros de empleados con
+
+	id (dni sin letra), entero largo
+	nombre, String con un máximo de 28 bytes
+	salario, double
+	
+De esa manera, cada empleado ocupará 8 + 28 + 8 = 44 bytes
+	
+Cada empleado se guardará en la posición indicada por las 3 últimas cifras del DNI. El programa ofrecerá un menú con las opciones, como mínimo, alta de un nuevo empleado y consulta de un empleado existente (a partir del DNI). El programa habrá de permitir colisiones, guardando los sinónimos al final del fichero.
+
+El fichero, con contenido vacío, lo puedes crear con el comando "truncate -s tamaño nomFichero".
+
+2. Copia el contenido de un fichero en otro haciendo uso de los métodos estáticos de la clase Files de java.nio.
+
+3. Hacer un programa que, utilizando canales y búferes NIO, haga una copia de un fichero de texto en otro fichero donde las minúsculas sean convertidas a mayúsculas.
+
+4. Crear un ByteBuffer para guardar 10 enteros, guardar en él 10 números aleatorios entre 1 y 10. Escribir los 10 valores del buffer a un fichero. Finalmente, abrir el fichero para lectura y mostrar su contenido. Puedes hacer uso para ello de Arrays.toString(array).
+
+5. Crea 2 IntBuffers con capacidad para 10 enteros cada uno de ellos. Guarda, de entre los 20 primeros números naturales, los pares en uno y los impares en otro. Escribe el contenido de ambos búferes a un fichero "numeros.dat".
+Lee el contenido del fichero con un ScatteringByteChannel que reparta el contenido en 4 búferes. Reune el contenido del primer y tercer buffer en un nuevo fichero con GatheringByteChannel.

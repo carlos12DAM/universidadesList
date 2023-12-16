@@ -1,0 +1,6 @@
+#Fichero de configuracón
+#Wed Nov 01 13:00:38 CET 2023
+user=usuario1
+password=pass1
+puerto=3306
+server=miservidor
